@@ -9,13 +9,9 @@ public class MyBasket {
 	public static int calculateTotalPrice(BasketItems basket){
 		int total = 0;
 		HashMap<String, Integer> prices= ItemPrice.prices;
-		
-		
 		total = (basket.getNoOfBananas()*prices.get("Banana"))+(basket.getNoOfOranges()*prices.get("Orange"))+(basket.getNoOfApples()*prices.get("Apple"))+(basket.getNoOfLemons()*prices.get("Lemon"))+(basket.getNoOfPeaches()*prices.get("Peaches"));
 		if(total<0)
 			total=0;
-		
-		
 		return total;
 	}
 	
