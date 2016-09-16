@@ -22,7 +22,6 @@ public class BasketItems {
 	 */
 	public BasketItems(int noOfBananas, int noOfOranges, int noOfApples,
 			int noOfLemons, int noOfPeaches) {
-		
 			if(noOfBananas>0)
 				setNoOfBananas(noOfBananas);
 					
