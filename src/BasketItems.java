@@ -1,5 +1,3 @@
-import java.util.InputMismatchException;
-
 public class BasketItems {
 	
 	private int noOfBananas;
@@ -24,39 +22,22 @@ public class BasketItems {
 	 */
 	public BasketItems(int noOfBananas, int noOfOranges, int noOfApples,
 			int noOfLemons, int noOfPeaches) {
-		try{
+		
 			if(noOfBananas>0)
-				this.noOfBananas = noOfBananas;
-			}catch(Exception e){
-				this.noOfBananas = 0;
-			}
-		
-		try{
+				setNoOfBananas(noOfBananas);
+					
 			if(noOfOranges>0)
-				this.noOfOranges = noOfOranges;
-			}catch(InputMismatchException e){
-				this.noOfOranges = 0;	
-			}
+				setNoOfOranges(noOfOranges);
 		
-		try{
 			if(noOfApples>0)
-			this.noOfApples = noOfApples;
-			}catch(InputMismatchException e){
-				this.noOfApples = 0;
-			}
+				setNoOfApples(noOfApples);
 		
-		try{
+		
 			if(noOfLemons>0)
-			this.noOfLemons = noOfLemons;
-			}catch(InputMismatchException e){
-				this.noOfLemons = 0;
-			}
-		try{
+				setNoOfLemons(noOfLemons);
+		
 			if(noOfPeaches>0)
-			this.noOfPeaches = noOfPeaches;
-			}catch(InputMismatchException e){
-				this.noOfPeaches = 0;
-			}
+				setNoOfPeaches(noOfPeaches);
 		
 		
 	}
