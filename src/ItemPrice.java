@@ -1,6 +1,4 @@
 import java.util.HashMap;
-
-
 public class ItemPrice {
 
 	public static HashMap<String, Integer> prices = new HashMap<String,Integer>();
