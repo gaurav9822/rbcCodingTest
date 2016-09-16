@@ -60,10 +60,33 @@ public class BasketItemsTest {
 		assertEquals(0, actual);
 		
 		
-		//Test#7:-
+		//Test#7:-Big integer value
 		
 		
+		BasketItems basket7 = new BasketItems(214748364, 0, -7, 0,-4);
 		
+		actual = MyBasket.calculateTotalPrice(basket7);
+		
+		assertEquals(2147483640, actual);
+		
+		
+		//Test#7:-Big negative integer value
+		
+		
+		BasketItems basket8 = new BasketItems(-2147483648, 0, -7, 0,-4);
+		
+		actual = MyBasket.calculateTotalPrice(basket8);
+		
+		assertEquals(0, actual);
+		
+		//Test#8:-No input test case
+		
+		
+		BasketItems basket9 = new BasketItems();
+		
+		actual = MyBasket.calculateTotalPrice(basket9);
+		
+		assertEquals(0, actual);
 		
 		
 		
