@@ -37,8 +37,6 @@ public class BasketItems {
 		
 			if(noOfPeaches>0)
 				setNoOfPeaches(noOfPeaches);
-		
-		
 	}
 	/**
 	 * @return the noOfBananas
