@@ -1,4 +1,5 @@
 import static org.junit.Assert.*;
+import junit.framework.Assert;
 
 import org.junit.Test;
 public class BasketItemsTest {
@@ -8,7 +9,9 @@ public class BasketItemsTest {
 	 */
 	@Test
 	public final void testCalculateTotalPrice() {
-		ItemPrice.initializePrices();						//To init fruit:price hashmap
+		
+			ItemPrice.initializePrices();						//To init fruit:price hashmap	
+		
 		
 		//Test#1:-All positive integers
 		BasketItems basket = new BasketItems(2, 2, 2, 2, 2);
@@ -42,9 +45,9 @@ public class BasketItemsTest {
 		
 		
 		//Test#7:-Big integer value		
-		BasketItems basket7 = new BasketItems(214748364, 0, -7, 0,-4);
+		BasketItems basket7 = new BasketItems(100000*1000000, 0, -7, 0,-4);
 		actual = MyBasket.calculateTotalPrice(basket7);
-		assertEquals(2147483640, actual);
+		assertEquals(0, actual);
 		
 		
 		//Test#8:-Big negative integer value
